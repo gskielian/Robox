@@ -1,6 +1,9 @@
 Robox
 =====
 
+Just follow the steps above: Bu
+
+
 ##Building, Wiring and Programming.
 
 ###Slideshow: The Making of Robox
@@ -8,8 +11,8 @@ Nicky Ringland's Slideshow showing how to make the robot:
 https://plus.google.com/photos/111905613472490788948/albums/5885754330336139153
 
 ###Wiring Diagrams (PNG files):
-RoboxWheelWiring.png  //First step, wire the motors
-RoboxUltrasonicWiring.png //Second step, wire the Ultrasonic Sensor
+<a href="https://github.com/gskielian/Robox/blob/master/Step%202%20Wiring/Wiring%20Step1_Robox%20Wheel%20Wiring%20Diagram.png"> Wiring Step1_Robox Wheel Wiring.png<a>  //First step, wire the motors
+<a href="https://github.com/gskielian/Robox/blob/master/Step%202%20Wiring/Wiring%20Step2_%20Robox%20Ultrasonic%20Wiring%20Diagram.png"> Wiring Step2_Robox Ultrasonic Wiring.png</a> //Second step, wire the Ultrasonic Sensor
 
 
 (Diagram created via <a href="http://www.fritzing.com">Fritzing</a>)

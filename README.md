@@ -23,7 +23,7 @@ Students truly build, wire, and program a robot completely using off the shelf c
 
 
 
-===
+--
 ###Credits
 
 Contained in this file is the fruits of collaboration between awesome coders and educators who envision use of this platform in their classes.

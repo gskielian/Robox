@@ -7,7 +7,11 @@ Robox
 Nicky Ringland's Slideshow showing how to make the robot: 
 https://plus.google.com/photos/111905613472490788948/albums/5885754330336139153
 
-###Wiring Diagram: Robox.fzz
+###Wiring Diagrams (PNG files):
+RoboxWheelWiring.png  //First step, wire the motors
+RoboxUltrasonicWiring.png //Second step, wire the Ultrasonic Sensor
+
+
 (Diagram created via <a href="http://www.fritzing.com">Fritzing</a>)
 
 ###Programs && Code: 

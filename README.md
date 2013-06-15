@@ -1,7 +1,7 @@
 Robox
 =====
 
-Just follow the steps above: Bu
+Just follow the steps below to construct the Robox (png included above). 
 
 
 ##Building, Wiring and Programming.

@@ -7,10 +7,13 @@ Just follow the steps above: Bu
 ##Building, Wiring and Programming.
 
 ###Slideshow: The Making of Robox
+Use the following as a guide for constructing and installing the Motors, Protoboard, and the Funduino into the box.
+
 Nicky Ringland's Slideshow showing how to make the robot: 
 https://plus.google.com/photos/111905613472490788948/albums/5885754330336139153
 
 ###Wiring Diagrams (PNG files):
+After physically installing )and taping down) the Motors, Arduino, and Protoboard, we need to wire these up : )
 <a href="https://github.com/gskielian/Robox/blob/master/Step%202%20Wiring/Wiring%20Step1_Robox%20Wheel%20Wiring%20Diagram.png"> Wiring Step1_Robox Wheel Wiring.png</a>  //First step, wire the motors
 
 <a href="https://github.com/gskielian/Robox/blob/master/Step%202%20Wiring/Wiring%20Step2_%20Robox%20Ultrasonic%20Wiring%20Diagram.png"> Wiring Step2_Robox Ultrasonic Wiring.png</a> //Second step, wire the Ultrasonic Sensor
@@ -20,9 +23,11 @@ https://plus.google.com/photos/111905613472490788948/albums/5885754330336139153
 
 ###Programs && Code: 
 
-1) AvoidWalls.ino       //Utilizes the HC-SR04 wired as in the Robox.fzz fritzing file (extends from MotorController.ino)
+Lastly, upload these code via the Arduino IDE and mod them to your liking
 
-2) MotorController.ino  //Abstraction off the public domain Servo-Sweep from Arduino's Example Menu (Credits <a href="http://barraganstudio.com">Barragan</a>), and the Servo.h library 
+1) <a href="https://github.com/gskielian/Robox/blob/master/Step%203%20Coding/AvoidWalls.ino" > AvoidWalls.ino</a>       //Utilizes the HC-SR04 wired as in the Robox.fzz fritzing file (extends from MotorController.ino)
+
+2) <a href="https://github.com/gskielian/Robox/blob/master/Step%203%20Coding/MotorController.ino"> MotorController.ino</a>  //Abstraction off the public domain Servo-Sweep from Arduino's Example Menu (Credits <a href="http://barraganstudio.com">Barragan</a>), and the Servo.h library 
 
 
 

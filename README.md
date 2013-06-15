@@ -22,7 +22,7 @@ https://plus.google.com/photos/111905613472490788948/albums/5885754330336139153
 
 Students truly build, wire, and program a robot completely using off the shelf components (a funduino, jumper wires, continuous-rotation servos, a 9V battery, and a 9V holder, a protoboard, and a cardboard container).
 
-a
+
 
 ##Credits
 

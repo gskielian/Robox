@@ -13,7 +13,7 @@ Nicky Ringland's Slideshow showing how to make the robot:
 https://plus.google.com/photos/111905613472490788948/albums/5885754330336139153
 
 ###Wiring Diagrams (PNG files):
-After physically installing )and taping down) the Motors, Arduino, and Protoboard, we need to wire these up : )
+After physically installing (and taping down) the Motors, Arduino, and Protoboard, we need to wire these up : )
 
 <a href="https://github.com/gskielian/Robox/blob/master/Step%202%20Wiring/Wiring%20Step1_Robox%20Wheel%20Wiring%20Diagram.png"> Wiring Step1_Robox Wheel Wiring.png</a>  //First step, wire the motors
 

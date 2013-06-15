@@ -12,6 +12,7 @@ https://plus.google.com/photos/111905613472490788948/albums/5885754330336139153
 
 ###Wiring Diagrams (PNG files):
 <a href="https://github.com/gskielian/Robox/blob/master/Step%202%20Wiring/Wiring%20Step1_Robox%20Wheel%20Wiring%20Diagram.png"> Wiring Step1_Robox Wheel Wiring.png<a>  //First step, wire the motors
+
 <a href="https://github.com/gskielian/Robox/blob/master/Step%202%20Wiring/Wiring%20Step2_%20Robox%20Ultrasonic%20Wiring%20Diagram.png"> Wiring Step2_Robox Ultrasonic Wiring.png</a> //Second step, wire the Ultrasonic Sensor
 
 

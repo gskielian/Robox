@@ -10,7 +10,10 @@ https://plus.google.com/photos/111905613472490788948/albums/5885754330336139153
 ###Wiring Diagram: Robox.fzz
 (Diagram created via <a href="http://www.fritzing.com">Fritzing</a>)
 
-###Program: Robox.ino
+###Program && Code: 
+AvoidWalls.ino     //Utilizes the HC-SR04 wired as in the Robox.fzz fritzing file)
+MotorController.ino  //Abstraction off the public domain Servo-Sweep from Arduino's Example Menu (Credits <a href="http://barraganstudio.com">Barragan</a>), and the Servo.h library 
+
 (included in main repository above)
 
 

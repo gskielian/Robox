@@ -8,7 +8,7 @@
    the distance of the object from the sensor.
      
    The circuit:
-  * VCC connection of the sensor attached to +5V
+	* VCC connection of the sensor attached to +5V
 	* GND connection of the sensor attached to ground
 	* TRIG connection of the sensor attached to digital pin 2
 	* ECHO connection of the sensor attached to digital pin 4
@@ -98,8 +98,9 @@ void loop() {
 
 void Forward(int speed) {
     attachServos(); //in case we disconnected them
-    speed = (int) (-speed);             
-    RightWheel.write(-speed); // Right wheel is backwards    
+    speed = (int) (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
+    LeftWheel.write(-speed);             
+    RightWheel.write(speed); // Right wheel is backwards    
 }
 void stepForward (int time, int speed) {
     Forward(speed);
@@ -107,9 +108,9 @@ void stepForward (int time, int speed) {
 }
 void Backward (int speed) {
     attachServos(); //in case we disconnected them
-    speed = (int) (-speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
-    LeftWheel.write(-speed);             
-    RightWheel.write(speed); // Right wheel is backwards    
+    speed = (int) (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
+    LeftWheel.write(speed);             
+    RightWheel.write(-speed); // Right wheel is backwards    
 }
 void stepBackward (int time, int speed) {
     Backward(speed);
@@ -119,7 +120,7 @@ void stepBackward (int time, int speed) {
 void Rotate (int speed, int turntime) {
     attachServos(); //in case we disconnected them
      
-    speed = (int) (-speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
+    speed = (int) (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
     LeftWheel.write(speed);             
     RightWheel.write(speed); // Right wheel is backwards 
     delay(turntime);

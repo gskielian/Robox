@@ -42,11 +42,16 @@ void setup() {
 }
  
 void loop() {
-  // establish variables for duration of the ping, 
-  // and the distance result in inches and centimeters:
-  long cm;
+  long cm;  
   cm = getDistance();
-  stepForward(200, 30);
+  
+  if ( cm < 30 )
+  {
+  	Rotate(700, 20);
+  }
+        stepForward(10, 100);  //stepForward(duration of step, % of full power);
+  
+  
 }
 
 

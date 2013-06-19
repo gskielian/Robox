@@ -52,7 +52,7 @@ void loop() {
   Serial.println();
 
   // check if wall is detected. If so, seek best direction and turn.
-  if (cm <= 15){
+  if (cm <= 40){
     long leftDistance, rightDistance;
     Serial.println("Backing up");
     stepBackward(1000, 20); 

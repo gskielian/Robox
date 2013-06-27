@@ -9,9 +9,9 @@
 //Forward, Backward, RotateLeft, RotateRight, Stop, and attachServo
 //by gskielian  < http://www.kielian.net > 
 
-float ForwardSpeed = 30;
-float RotateSpeed = 30;
-float BackwardSpeed = 30;
+double ForwardSpeed = 30.0;
+double RotateSpeed = 30.0;
+double BackwardSpeed = 30.0;
 
 #include <Servo.h> 
  
@@ -50,25 +50,29 @@ void loop()
 
 
 
-void Forward(float seconds)
+void Forward(double seconds)
 {
-    float speed = ForwardSpeed;
+    double speed = ForwardSpeed;
     attachServos(); //in case we disconnected them
      
+     //The CRS thinks it is always at 90 degrees
+     //if you tell it to go to 180 degrees it will go really fast clock-wise
+     //0 degrees really quickly counterclockwise
+     // 95 really slowly clockwise
     speed = (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
     LeftWheel.write( (int) -speed);             
     RightWheel.write((int) speed); // Right wheel is backwards
-   
+  // casting   
    delay((int) (seconds*1000)); 
 }
 
 
 
-void Backward ( float seconds)
+void Backward ( double seconds)
 {
     attachServos(); //in case we disconnected them
     
-    float speed = BackwardSpeed; 
+    double speed = BackwardSpeed; 
     speed = (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
     LeftWheel.write((int) speed);             
     RightWheel.write((int) -speed); // Right wheel is backwards
@@ -77,9 +81,9 @@ void Backward ( float seconds)
 
 
 
-void RotateLeft (float seconds)
+void RotateLeft (double seconds)
 {
-    float speed = RotateSpeed;
+    double speed = RotateSpeed;
     attachServos(); //in case we disconnected them
      
     speed = (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
@@ -88,9 +92,9 @@ void RotateLeft (float seconds)
     delay((int) (seconds*1000));
 }
 
-void RotateRight (float seconds)
+void RotateRight (double seconds)
 {
-    float speed = RotateSpeed;
+    double speed = RotateSpeed;
     attachServos(); //in case we disconnected them
      
     speed =  (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
@@ -100,14 +104,12 @@ void RotateRight (float seconds)
 }
 
 
-void Stop( float seconds)
+void Stop( double seconds)
 {
   LeftWheel.detach();
   RightWheel.detach();
   delay((int) (seconds*1000));
 }
-
-
 
 
 

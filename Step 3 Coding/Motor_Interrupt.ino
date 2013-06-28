@@ -25,7 +25,7 @@ int RWPin = 11; //right-wheel control pin
 
 
 //We need a variable that can be used by the interrupt
-volatile int someVariableName = LOW;
+volatile int isHit = LOW;
 //
 
 void setup() 
@@ -39,11 +39,14 @@ void setup()
 void loop() 
 { 
      Forward(2); // Full steam ahead!
-     RotateLeft(0.5);  
+     if( isHit == HIGH)
+     {
+     Backwards(0.5);  
+     }
 } 
 
 void hit() {
-  
+  isHit != isHit;
 }
 
 

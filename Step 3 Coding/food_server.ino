@@ -33,26 +33,34 @@ void setup()
   pinMode(5,INPUT);
   pinMode(6,INPUT);
   pinMode(7,INPUT);
+  Serial.begin(9600);
+  
 } 
  
  
 void loop() 
 { 
-   if(digitalRead(4) == 1)
+  Serial.println(digitalRead(4));
+  delay(1);
+   if(digitalRead(4) == HIGH)
    {
    Forward(1);
    }
-   if(digitalRead(5) == 1)
+   else if(digitalRead(5) == HIGH)
    {
    Backward(1);
    }
-   if(digitalRead(6) == 1)
-   {
+   else if(digitalRead(6) == HIGH)
+  {
    RotateLeft(0.5);
    }
-   if(digitalRead(7) == 1)
+   else if(digitalRead(7) == HIGH)
    {
    RotateRight(0.5);
+   }
+   else
+   {
+    Stop(0.001); 
    }
 
 } 

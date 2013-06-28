@@ -23,22 +23,23 @@ Servo RightWheel;  // create servo object to control a servo
 int LWPin = 10; //set the pin number for your left servo-motors (just change the number if not pin 9)
 int RWPin = 11; //right-wheel control pin
 
-
+int threshold = 512; // Arduino I/O Board 1024 levels for its ADC
 
 void setup() 
 { 
   LeftWheel.attach( LWPin );  //  Connects LeftWheel to the pin LWPin
   RightWheel.attach( RWPin );  // Connects another wheel to be controlled by the pin RWPin
-
+  Serial.begin(9600);
 } 
  
  
 void loop() 
 { 
-
-
+   
+     Serial.println(analogRead(A0)); // then we must test it for being hit 
+                                    //and not being hit and choose a value safely in the middle as our threshold.
      Forward(2); // Full steam ahead!
-     RotateLeft(0.5);
+     //RotateLeft(0.5);
     
 } 
 

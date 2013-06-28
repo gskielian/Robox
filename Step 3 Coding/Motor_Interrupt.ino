@@ -38,15 +38,11 @@ void setup()
  
 void loop() 
 { 
-     Forward(2); // Full steam ahead!
-     if( isHit == HIGH)
-     {
-     Backwards(0.5);  
-     }
+     Forward(1); // Full steam ahead!
 } 
 
 void hit() {
-  isHit != isHit;
+  Backwards(0.5);
 }
 
 

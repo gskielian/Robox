@@ -54,7 +54,7 @@ void Forward(double seconds)
 {
     double speed = ForwardSpeed;
     attachServos(); //in case we disconnected them
-     
+     imHit(); // checks if we are hit -- if so we go backwards for a bit
      //The CRS thinks it is always at 90 degrees
      //if you tell it to go to 180 degrees it will go really fast clock-wise
      //0 degrees really quickly counterclockwise
@@ -119,5 +119,14 @@ void attachServos()
 {
    LeftWheel.attach(LWPin);
    RightWheel.attach(RWPin);
-
 }
+
+
+void imHit()
+{
+ if(analogRead(A0) > threshold) // depending on the electrical wiring of your voltage divider you might need "<" instead of  ">"
+ {
+  Backward(2); 
+  }
+}
+

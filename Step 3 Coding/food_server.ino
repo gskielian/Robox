@@ -29,17 +29,32 @@ void setup()
 { 
   LeftWheel.attach( LWPin );  //  Connects LeftWheel to the pin LWPin
   RightWheel.attach( RWPin );  // Connects another wheel to be controlled by the pin RWPin
-
+  pinMode(4,INPUT);
+  pinMode(5,INPUT);
+  pinMode(6,INPUT);
+  pinMode(7,INPUT);
 } 
  
  
 void loop() 
 { 
+   if(digitalRead(4) == 1)
+   {
+   Forward(1);
+   }
+   if(digitalRead(5) == 1)
+   {
+   Backward(1);
+   }
+   if(digitalRead(6) == 1)
+   {
+   RotateLeft(0.5);
+   }
+   if(digitalRead(7) == 1)
+   {
+   RotateRight(0.5);
+   }
 
-
-     Forward(2); // Full steam ahead!
-     RotateLeft(0.5);
-    
 } 
 
 

@@ -42,7 +42,7 @@ Students truly build, wire, and program a robot completely using off the shelf c
 
 Contained in this file is the fruits of collaboration between awesome coders and educators who envision use of this platform in their classes.
 
-Credits to Nicky Ringland of Sydney Universisty for naming the robot, coding the Direction-Decision-Making code (Based on measurements from the Ultrasonic-Distance-Sensor), and for creating the slideshow which covers construction (link here).
+Credits to Nicky Ringland of Sydney University for naming the robot, coding the Direction-Decision-Making code (Based on measurements from the Ultrasonic-Distance-Sensor), and for creating the slideshow which covers construction (link here).
 (Thanks also for providing the name for the project). 
 
 Credits to Chris Newton for his enthusiasm, support, and offering use of his classroom's computers for the afterschool activity.  

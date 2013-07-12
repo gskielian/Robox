@@ -59,8 +59,9 @@ void Forward(double seconds)
      //if you tell it to go to 180 degrees it will go really fast clock-wise
      //0 degrees really quickly counterclockwise
      // 95 really slowly clockwise
+    double leftspeed = (-speed/100.0*90.0 + 90) ;
     speed = (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
-    LeftWheel.write( (int) -speed);             
+    LeftWheel.write( (int) leftspeed);             
     RightWheel.write((int) speed); // Right wheel is backwards
   // casting   
    delay((int) (seconds*1000)); 
@@ -73,9 +74,10 @@ void Backward ( double seconds)
     attachServos(); //in case we disconnected them
     
     double speed = BackwardSpeed; 
-    speed = (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
-    LeftWheel.write((int) speed);             
-    RightWheel.write((int) -speed); // Right wheel is backwards
+    double leftspeed = (speed/100.0*90.0 + 90) ;
+    speed = (-speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
+    LeftWheel.write( (int) leftspeed);             
+    RightWheel.write((int) speed); // Right wheel is backwards
     delay((int) (seconds*1000));
 }
 
@@ -87,7 +89,9 @@ void RotateLeft (double seconds)
     attachServos(); //in case we disconnected them
      
     speed = (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
-    LeftWheel.write((int) speed);             
+    double leftspeed = (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
+
+    LeftWheel.write((int) leftspeed);             
     RightWheel.write((int) speed); // Right wheel is backwards 
     delay((int) (seconds*1000));
 }
@@ -97,9 +101,11 @@ void RotateRight (double seconds)
     double speed = RotateSpeed;
     attachServos(); //in case we disconnected them
      
-    speed =  (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
-    LeftWheel.write((int) -speed);             
-    RightWheel.write((int) -speed); // Right wheel is backwards 
+    speed =  (-speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
+    double leftspeed =  (-speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
+    
+    LeftWheel.write((int) leftspeed);             
+    RightWheel.write((int) speed); // Right wheel is backwards 
     delay((int) (seconds*1000));
 }
 
@@ -119,5 +125,4 @@ void attachServos()
 {
    LeftWheel.attach(LWPin);
    RightWheel.attach(RWPin);
-
 }

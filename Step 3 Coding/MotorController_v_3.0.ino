@@ -37,9 +37,11 @@ void loop()
 { 
 
 
-     Forward(2); // Full steam ahead!
-     RotateLeft(0.5);
-    
+     Forward(4); // Full steam ahead!
+     Backward(4);
+     RotateLeft(2);
+     RotateRight(2);
+     Stop(3);
 } 
 
 

@@ -62,11 +62,15 @@ void Forward(double seconds)
      //if you tell it to go to 180 degrees it will go really fast clock-wise
      //0 degrees really quickly counterclockwise
      // 95 really slowly clockwise
+     
     double leftspeed = (-speed/100.0*90.0 + 90) ;
     double rightspeed = (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
+    
     LeftWheel.write( (int) leftspeed);             
     RightWheel.write((int) rightspeed); // Right wheel is backwards
-  // casting   
+ 
+   //delay wants an integer number of milliseconds, we turn seconds to milliseconds
+   //then we turn the result into an int
    delay((int) (seconds*1000)); 
 }
 

@@ -55,16 +55,17 @@ void loop()
 void Forward(double seconds)
 {
     double speed = ForwardSpeed;
-    attachServos(); //in case we disconnected them
-     
+
+     attachServos(); //in case we disconnected them
+
      //The CRS thinks it is always at 90 degrees
      //if you tell it to go to 180 degrees it will go really fast clock-wise
      //0 degrees really quickly counterclockwise
      // 95 really slowly clockwise
     double leftspeed = (-speed/100.0*90.0 + 90) ;
-    speed = (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
+    double rightspeed = (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
     LeftWheel.write( (int) leftspeed);             
-    RightWheel.write((int) speed); // Right wheel is backwards
+    RightWheel.write((int) rightspeed); // Right wheel is backwards
   // casting   
    delay((int) (seconds*1000)); 
 }
@@ -73,13 +74,16 @@ void Forward(double seconds)
 
 void Backward ( double seconds)
 {
-    attachServos(); //in case we disconnected them
-    
     double speed = BackwardSpeed; 
+
+    attachServos(); //in case we disconnected them
+
     double leftspeed = (speed/100.0*90.0 + 90) ;
-    speed = (-speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
+    double rightspeed = (-speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
+    
     LeftWheel.write( (int) leftspeed);             
-    RightWheel.write((int) speed); // Right wheel is backwards
+    RightWheel.write((int) rightspeed);
+    
     delay((int) (seconds*1000));
 }
 
@@ -88,34 +92,38 @@ void Backward ( double seconds)
 void RotateLeft (double seconds)
 {
     double speed = RotateSpeed;
-    attachServos(); //in case we disconnected them
-     
-    speed = (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
-    double leftspeed = (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
 
+    attachServos(); //in case we disconnected them
+
+    double leftspeed = (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
+    double rightspeed = (speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
+    
     LeftWheel.write((int) leftspeed);             
-    RightWheel.write((int) speed); // Right wheel is backwards 
+    RightWheel.write((int) rightspeed);
     delay((int) (seconds*1000));
 }
 
 void RotateRight (double seconds)
 {
     double speed = RotateSpeed;
+    
     attachServos(); //in case we disconnected them
      
-    speed =  (-speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
     double leftspeed =  (-speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
+    double rightspeed =  (-speed/100.0*90.0 + 90) ;  // translates it to servo-speak (servo input is from 0-180)
     
     LeftWheel.write((int) leftspeed);             
-    RightWheel.write((int) speed); // Right wheel is backwards 
+    RightWheel.write((int) rightspeed); 
+
     delay((int) (seconds*1000));
 }
 
 
 void Stop( double seconds)
 {
-  LeftWheel.detach();
+  LeftWheel.detach();  //to stop the motors, we have the Arduino stop sending signals entirely
   RightWheel.detach();
+
   delay((int) (seconds*1000));
 }
 

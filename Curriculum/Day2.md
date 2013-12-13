@@ -30,4 +30,7 @@ Wiring
       * fix wires with small amount of hot glue
 
 Programming
-  * 
+  * How to use github 
+    * get "Raw" code from Robox Repository
+    * paste "Raw" Code into Arduino
+    * Upload using the

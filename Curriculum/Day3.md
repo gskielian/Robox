@@ -34,5 +34,26 @@ Case Sensitive
 Missing "}" when copying
 
 
+Projects:
+Change the order of the commands
+Change the duration of the commands
+Time the robot to Turn the Corner of the outside wall
+Time the robot to Turn the Corner of the outside wall and return
+
+
+Time the robot to Turn the Corner of the outside wall and return + have an adult send a note inside of it.
+
+
+Extra Credit:
+
+Have it do this only once (by placing the code in the Setup phase, and a delay to occupy the loop phase, don't leave the loop phase empty)
+
+
+
+
+
+
+
+
 
 

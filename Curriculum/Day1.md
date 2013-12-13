@@ -1,7 +1,19 @@
 Building the robot from scratch
 
 
+## Github 
+
+The first activity is for students to each create a github account.
+
+If they already have a github account they can work on:
+
+* helping other students
+* friending other students
+* selecting a gravatar
+* browsing the [octodex](http://octodex.github.com/)
+
 ## Storytime -- Maker Movement 
+
 
 1. building the box
 

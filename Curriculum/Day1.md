@@ -1,5 +1,7 @@
-Day 1: Building the robot from scratch (3 hours)
-======================================
+Day 1: Building the robot from scratch
+===
+
+> 3 hours
 
 Students are often asked if they really built the robot, in this excercise they will do just that all the way from the box
 

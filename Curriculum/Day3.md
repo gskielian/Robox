@@ -1,6 +1,6 @@
-Programming
+Programming 
 
-> 3 hours
+> 6 hours
 
 
 Today we program the robot to move in different patterns.

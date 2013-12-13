@@ -28,7 +28,7 @@ Lastly, upload these code via the Arduino IDE and mod them to your liking
 
 1) <a href="https://github.com/gskielian/Robox/blob/master/Step%203%20Coding/AvoidWalls.ino" > AvoidWalls.ino</a>       //Utilizes the HC-SR04 wired as in the Robox.fzz fritzing file (extends from MotorController.ino)
 
-2) <a href="https://github.com/gskielian/Robox/blob/master/Step%203%20Coding/MotorController.ino"> MotorController.ino</a>  //Abstraction off the public domain Servo-Sweep from Arduino's Example Menu (Credits <a href="http://barraganstudio.com">Barragan</a>), and the Servo.h library 
+2) <a href="https://github.com/gskielian/Robox/blob/master/Step%203%20Coding/MotorController_v_3.0.ino"> MotorController.ino</a>  //Abstraction off the public domain Servo-Sweep from Arduino's Example Menu (Credits <a href="http://barraganstudio.com">Barragan</a>), and the Servo.h library 
 
 
 

@@ -1,5 +1,6 @@
 body {
-  background: url(../img/old_map.png) no-repeat center center fixed; 
+  background: url(../img/old_map.png) repeat; 
+/*  background: url(../img/old_map.png) no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

@@ -19,7 +19,7 @@ Wiring
   * Servo Motors
     * high voltage
     * lower voltage
-    * Control Wire (__spinal cord__)
+    * Control Wire (_spinal cord_)
   * Students follow instructions to try to connect motors
     * there aren't enough pins for the 5V???
   * Enter the solderless protoboard
@@ -30,7 +30,15 @@ Wiring
       * fix wires with small amount of hot glue
 
 Programming
+
   * How to use github 
-    * get "Raw" code from Robox Repository
+    * navigate to "Raw" code from Robox Repository
+  * How to use Arduino
     * paste "Raw" Code into Arduino
-    * Upload using the
+    * Upload using the :arrow_forward: key
+
+
+
+
+
+

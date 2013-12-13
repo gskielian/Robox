@@ -1,4 +1,7 @@
-Building the robot from scratch
+Day 1: Building the robot from scratch
+======================================
+
+Students are often asked if they really built the robot, in this excercise they will do just that all the way from hte box.
 
 
 ## Github 
@@ -14,6 +17,7 @@ If they already have a github account they can work on:
 
 ## Storytime -- Maker Movement 
 
+Discuss the story of Hackerspaces 
 
 1. building the box
 
